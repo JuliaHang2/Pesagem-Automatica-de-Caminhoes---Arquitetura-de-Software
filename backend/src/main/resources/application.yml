@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/pesagem}
+    username: ${DB_USER:pesagem}
+    password: ${DB_PASSWORD:pesagem}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+app:
+  jwt:
+    secret: ${JWT_SECRET:troque-este-segredo-em-producao-32-bytes-minimo!}
+    expiracao-ms: 28800000   # 8h (sessão com expiração - RNF05)

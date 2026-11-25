@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #f2f4f7; color: #1f2937; }
+.topo { display: flex; align-items: center; gap: 24px; background: #1e3a5f; color: #fff; padding: 12px 24px; flex-wrap: wrap; }
+.topo nav { display: flex; gap: 14px; flex: 1; }
+.topo a { color: #cbd5e1; text-decoration: none; padding: 4px 8px; border-radius: 6px; }
+.topo a.active { background: #fff2; color: #fff; }
+.usuario { font-size: 14px; }
+main { max-width: 1100px; margin: 24px auto; padding: 0 16px; display: grid; gap: 16px; }
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; align-items: start; }
+.cartao { background: #fff; border-radius: 10px; padding: 18px; box-shadow: 0 1px 3px #0002; display: grid; gap: 10px; }
+.cartao.estreito { max-width: 480px; }
+h2 { margin: 0 0 4px; font-size: 18px; }
+label { display: grid; gap: 4px; font-size: 14px; }
+label.linha, form.linha { display: flex; align-items: center; gap: 8px; }
+input { padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 15px; }
+button { padding: 8px 14px; border: 1px solid #94a3b8; background: #fff; border-radius: 6px; cursor: pointer; }
+button.primario { background: #1e3a5f; color: #fff; border-color: #1e3a5f; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.botoes { display: flex; gap: 8px; flex-wrap: wrap; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e5e7eb; }
+tr.clicavel { cursor: pointer; } tr.clicavel:hover { background: #f8fafc; }
+.riscado { color: #94a3b8; text-decoration: line-through; }
+.interna { background: #f8fafc; }
+.erro { color: #b91c1c; margin: 0; } .ok { color: #15803d; margin: 0; }
+.detalhes { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; }
+.detalhes dt { color: #64748b; } .detalhes dd { margin: 0; }
+.ticket, .comprovante { border: 2px dashed #94a3b8; border-radius: 8px; padding: 12px; }
+.ticket .codigo { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 4px 0; }
+.login { min-height: 100vh; display: grid; place-items: center; }
+.login .cartao { width: 360px; }
+.indicadores { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.indicadores .cartao span { color: #64748b; font-size: 13px; } .indicadores strong { font-size: 26px; }
+.painel { min-height: 100vh; display: grid; place-content: center; text-align: center; color: #fff; gap: 16px; }
+.painel.verde { background: #166534; } .painel.vermelho { background: #991b1b; } .painel.neutro { background: #111827; }
+.painel .msg { font-size: 9vw; font-weight: 800; letter-spacing: 4px; }
+.painel .placa { font-size: 5vw; } .painel .peso { font-size: 6vw; font-weight: 700; }
+@media print { .topo, button, form { display: none !important; } }
