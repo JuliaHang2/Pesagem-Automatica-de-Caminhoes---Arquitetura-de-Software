@@ -1,6 +1,6 @@
 # Pesagem Automatizada de Caminhões
 
-Projeto da UTFPR – Campus Dois Vizinhos (Engenharia de Software).
+UTFPR-DV (Engenharia de Software).
 Equipe: Beatriz Dourado de Lima, Júlia Hang e Luis Fernando de Souza Perim.
 
 Sistema que automatiza a pesagem de caminhões em um frigorífico, no estilo das cancelas com ticket:
@@ -19,7 +19,7 @@ React + Vite · Java 17 + Spring Boot 3 · PostgreSQL · Spring Security + JWT �
 
 ## Como executar
 
-### Com Docker (recomendado)
+### Com Docker
 ```bash
 docker compose up --build
 ```
